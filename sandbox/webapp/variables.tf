@@ -8,5 +8,10 @@ variable "webapp_name" {
 }
 
 variable "env_name" {
-  type = string
+  type = map
+  default = {
+    dev = "dev"
+    test = "test"
+    prod = "prod"
+  }
 }
